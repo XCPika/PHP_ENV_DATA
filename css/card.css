@@ -1,0 +1,109 @@
+.card-container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 5%;
+    row-gap: 2vh;
+    padding: 0 5%;
+    padding-bottom: 2vh;
+}
+
+.grid_container {
+    min-height: 55vh;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: "T T" "sep sep" "I B";
+    box-shadow: 5px 5px 5px #aaaaaa;
+    padding: 1vh;
+}
+
+.card-title {
+    margin: 0.4vh;
+    padding: 1vh 0;
+    color: black;
+    grid-area: T;
+    font-size: 1.2rem;
+}
+
+.card-desc {
+    margin: 0;
+    padding-top: 0.5vh;
+    padding-right: 1vh;
+    color: black;
+    text-align: center;
+    margin-bottom: 1vh;
+    grid-area: D;
+    justify-self: start;
+}
+
+.card-img {
+    border-radius: 15%;
+    width: 75%;
+    margin-left: 3vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    order: 2;
+    grid-area: I;
+}
+
+.btn-area {
+    grid-area: B;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.btn-group {
+    justify-self: end;
+    align-self: end;
+    display: flex;
+    margin-left: auto;
+    margin-right: 0.5vh;
+    order: 2;
+}
+
+.card-text-dark {
+    padding: 0.9vh 0;
+    padding-right: 1vh;
+    text-decoration: underline;
+    color: black;
+    margin-top: auto;
+    order: 2;
+    text-align: end;
+}
+
+.btn-d {
+    border: black 3px solid;
+    padding: 0.4vh;
+    padding-top: 0.5vh;
+    flex: 1 1 auto;
+    text-decoration: none;
+}
+
+.left {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: none;
+    color: black;
+    padding-right: 0.65vh;
+}
+
+.right {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: none;
+    padding-left: 0.65vh;
+    background: black;
+    color: white;
+}
+
+.card-seperator {
+    background: #000;
+    height: 2px;
+    margin: 0 1vh;
+    margin-bottom: 1vh;
+    grid-area: sep;
+}

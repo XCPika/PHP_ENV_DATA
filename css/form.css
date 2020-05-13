@@ -1,0 +1,125 @@
+.btn {
+    background-color: rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    border: none;
+    border-radius: 10%;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #888;
+}
+
+.form-container {
+    width: 35vw;
+    padding: 2vh 3vh;
+    height: fit-content;
+    background-color: rgb(58, 58, 58);
+}
+
+.form-light {
+    justify-self: center;
+    padding: 0 3vh;
+    background-color: white;
+}
+
+.form-group {
+    display: grid;
+    margin: 2vh 0;
+    font-size: 1.2rem;
+    flex-grow: 0.5;
+}
+
+.form-together {
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+}
+
+.form-content {
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 0 20%;
+}
+
+#insert .form-content {
+    grid-template-columns: 70% 25%;
+    padding: 0 15%;
+    column-gap: 3%;
+}
+
+.input {
+    padding: 1.5vh;
+    border: none;
+    color: rgb(58, 58, 58);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-dark {
+    background: rgb(58, 58, 58);
+    color: white;
+}
+
+.label {
+    padding-bottom: 1vh;
+}
+
+.black {
+    color: black;
+}
+
+.small {
+    font-weight: normal;
+    color: gray;
+    padding-top: 1vh;
+    padding-left: 1vh;
+}
+
+.dg {
+    color: darkslategray;
+}
+
+.s {
+    font-size: 0.9rem;
+}
+
+.edit-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 6%;
+}
+
+.grided {
+    height: fit-content;
+}
+
+.selectors {
+    display: flex;
+}
+
+.titled {
+    grid-area: 1 / 1 / span 1 /span 2;
+    margin: 0;
+    padding-top: 1.5vh;
+    border-bottom: black 2px solid;
+}
+
+.center {
+    margin-top: auto;
+    margin-bottom: auto;
+    order: 2;
+    padding: 0 0.2vw;
+}
+
+.padded-top {
+    padding-top: 1vh;
+}
+
+.padded-bottom {
+    padding-bottom: 1vh;
+}

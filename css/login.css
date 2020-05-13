@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/background-purple.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 10vh;
+    height: 100vh;
+}

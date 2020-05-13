@@ -1,0 +1,76 @@
+html {
+    margin: 0;
+    height: 100%;
+}
+
+head {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(150, 150, 150);
+    font-weight: bold;
+    min-height: 100%;
+    border: 0;
+    background-color: black;
+}
+
+.a-reset:link,
+.a-reset:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+@-webkit-keyframes autofill {
+    0%,
+    100% {
+        color: white;
+        background: rgb(58, 58, 58);
+    }
+}
+
+@keyframes autofill {
+    0%,
+    100% {
+        color: white;
+        background: rgb(58, 58, 58);
+    }
+}
+
+@-webkit-keyframes autofill1 {
+    0%,
+    100% {
+        color: rgb(58, 58, 58);
+        background: white;
+    }
+}
+
+@keyframes autofill1 {
+    0%,
+    100% {
+        color: rgb(58, 58, 58);
+        background: white;
+    }
+}
+
+input:-webkit-autofill {
+    animation-delay: 1s;
+    animation-name: autofill;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 1s;
+    /* Safari support - any positive time runs instantly */
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
+
+#login input:-webkit-autofill {
+    animation-delay: 1s;
+    animation-name: autofill1;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 1s;
+    /* Safari support - any positive time runs instantly */
+    -webkit-animation-name: autofill1;
+    -webkit-animation-fill-mode: both;
+}
